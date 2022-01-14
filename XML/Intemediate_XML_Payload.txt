@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NOR>
+	<created>2020-05-31T11:16:09Z</created>
+	<hostIndicator>AFS</hostIndicator>
+	<plant>8030</plant>
+	<warehouse>SFHK</warehouse>
+	<transactionNumber>2787074324</transactionNumber>
+	<containerNumber>1187143476</containerNumber>
+	<inboundDeliveryNumber>1187143476</inboundDeliveryNumber>
+	<internalReference>RK20200421318507224</internalReference>
+	<inboundDeliveryLines>
+		<lineNumber>000001900001</lineNumber>
+		<articleNumber>EF8830</articleNumber>
+		<srcSizeCd3>540</srcSizeCd3>
+		<unitsReceived>120</unitsReceived>
+	</inboundDeliveryLines>
+</NOR>

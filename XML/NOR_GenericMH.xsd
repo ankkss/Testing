@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="NOR" type="NORType"/>
+	<xs:complexType name="inboundDeliveryLinesType">
+		<xs:all>
+			<xs:element name="lineNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="articleNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="srcSizeCd3" type="xs:string" minOccurs="0"/>
+			<xs:element name="salesOrder" type="xs:string" minOccurs="0"/>
+			<xs:element name="salesOrderLine" type="xs:string" minOccurs="0"/>
+			<xs:element name="iLPNsShipped" type="xs:int" minOccurs="0"/>
+			<xs:element name="unitsShipped" type="xs:int" minOccurs="0"/>
+			<xs:element name="iLPNsReceived" type="xs:int" minOccurs="0"/>
+			<xs:element name="unitsReceived" type="xs:int" minOccurs="0"/>
+			<xs:element name="division" type="xs:string" minOccurs="0"/>
+			<xs:element name="twoStepSellingDeliveryLine" type="xs:string" minOccurs="0"/>
+			<xs:element name="stockType" type="xs:string" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="NORType">
+		<xs:sequence>
+			<xs:element name="created" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="hostIndicator" type="xs:string" minOccurs="0"/>
+			<xs:element name="plant" type="xs:string" minOccurs="0"/>
+			<xs:element name="warehouse" type="xs:string" minOccurs="0"/>
+			<xs:element name="transactionNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="sequenceNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="receiptsVariance" type="xs:string" minOccurs="0"/>
+			<xs:element name="receiptsCompleted" type="xs:string" minOccurs="0"/>
+			<xs:element name="containerNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="twoStepSellingDelivery" type="xs:string" minOccurs="0"/>
+			<xs:element name="inboundDeliveryNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="inboundDeliveryLines" type="inboundDeliveryLinesType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
