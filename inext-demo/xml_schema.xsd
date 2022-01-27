@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="NOR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="hostIndicator" type="xs:string"/>
+        <xs:element name="containerNumber" type="xs:string"/>
+        <xs:element name="created" type="xs:string"/>
+        <xs:element name="inboundDeliveryNumber" type="xs:string"/>
+        <xs:element name="plant" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="transactionNumber" type="xs:string"/>
+        <xs:element name="internalReference" type="xs:string"/>
+        <xs:element name="warehouse" type="xs:string"/>
+        <xs:element name="inboundDeliveryLines">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="articleNumber" type="xs:string"/>
+              <xs:element name="lineNumber" type="xs:string"/>
+              <xs:element name="srcSizeCd3" type="xs:string"/>
+              <xs:element name="unitsReceived" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

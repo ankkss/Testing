@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome8",
+    "definitions": {
+        "Welcome8": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "NOR": {
+                    "$ref": "#/definitions/Nor"
+                }
+            },
+            "required": [
+                "NOR"
+            ],
+            "title": "Welcome8"
+        },
+        "Nor": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "created": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "hostIndicator": {
+                    "type": "string"
+                },
+                "plant": {
+                    "type": "integer"
+                },
+                "warehouse": {
+                    "type": "string"
+                },
+                "transactionNumber": {
+                    "type": "integer"
+                },
+                "containerNumber": {
+                    "type": "integer"
+                },
+                "inboundDeliveryNumber": {
+                    "type": "integer"
+                },
+                "internalReference": {
+                    "type": "string"
+                },
+                "inboundDeliveryLines": {
+                    "$ref": "#/definitions/InboundDeliveryLines"
+                }
+            },
+            "required": [
+                "containerNumber",
+                "created",
+                "hostIndicator",
+                "inboundDeliveryLines",
+                "inboundDeliveryNumber",
+                "internalReference",
+                "plant",
+                "transactionNumber",
+                "warehouse"
+            ],
+            "title": "Nor"
+        },
+        "InboundDeliveryLines": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "lineNumber": {
+                    "type": "integer"
+                },
+                "articleNumber": {
+                    "type": "string"
+                },
+                "srcSizeCd3": {
+                    "type": "integer"
+                },
+                "unitsReceived": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "articleNumber",
+                "lineNumber",
+                "srcSizeCd3",
+                "unitsReceived"
+            ],
+            "title": "InboundDeliveryLines"
+        }
+    }
+}

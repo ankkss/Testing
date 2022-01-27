@@ -1,0 +1,18 @@
+{
+  "NOR": {
+    "created": "2020-05-31T11:16:09Z",
+    "hostIndicator": "AFS",
+    "plant": 8030,
+    "warehouse": "SFHK",
+    "transactionNumber": 2787074324,
+    "containerNumber": 1187143476,
+    "inboundDeliveryNumber": 1187143476,
+    "internalReference": "RK20200421318507224",
+    "inboundDeliveryLines": {
+      "lineNumber": 1900001,
+      "articleNumber": "EF8830",
+      "srcSizeCd3": 540,
+      "unitsReceived": 120
+    }
+  }
+}
