@@ -1,0 +1,48 @@
+{
+"ReturnConfirmation":{
+  "created" : "2022-01-24T13:18:24-05:00",
+  "hostIndicator" : "AEU",
+  "plant" : "6041",
+  "warehouse" : "SFHK",
+  "transactionNumber" : "116880878",
+  "sequenceNumber" : "1",
+  "returnOrder" : "6133926084",
+  "originalOrder" : "A",
+  "enterpriseCode" : "60605650016060565000",
+  "shipTo" : "6060565001",
+  "soldTo" : "6060565000",
+  "purchaseOrderType" : "U90",
+  "reasonCode" : "R01",
+  "returnNote" : "",
+  "returnOrderLines" : [{
+    "orderLine" : "000012",
+    "articleNumber" : "GM0317",
+    "srcSizeCD3" : "210",
+    "stockCategory" : "A60380001",
+    "salesOrganization" : "6038",
+    "channel" : "01",
+    "storageLocation" : "0001",
+    "unitsReceived" : "50",
+    "division" : "02",
+    "unitsShipped" : "0",
+    "brand" : "11",
+    "articleLevelReceiving" : "898",
+    "salesSizeDescription" : "30\""
+  },
+  {
+    "orderLine" : "000013",
+    "articleNumber" : "GM0317",
+    "srcSizeCD3" : "210",
+    "stockCategory" : "A60380001",
+    "salesOrganization" : "6038",
+    "channel" : "01",
+    "storageLocation" : "0001",
+    "unitsReceived" : "50",
+    "division" : "02",
+    "unitsShipped" : "0",
+    "brand" : "11",
+    "articleLevelReceiving" : "898",
+    "salesSizeDescription" : "30\""
+  }]
+}
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ReturnConfirmation": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string"
+        },
+        "hostIndicator": {
+          "type": "string"
+        },
+        "plant": {
+          "type": "string"
+        },
+        "warehouse": {
+          "type": "string"
+        },
+        "transactionNumber": {
+          "type": "string"
+        },
+        "sequenceNumber": {
+          "type": "string"
+        },
+        "returnOrder": {
+          "type": "string"
+        },
+        "originalOrder": {
+          "type": "string"
+        },
+        "enterpriseCode": {
+          "type": "string"
+        },
+        "shipTo": {
+          "type": "string"
+        },
+        "soldTo": {
+          "type": "string"
+        },
+        "purchaseOrderType": {
+          "type": "string"
+        },
+        "reasonCode": {
+          "type": "string"
+        },
+        "returnNote": {
+          "type": "string"
+        },
+        "returnOrderLines": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "orderLine": {
+                  "type": "string"
+                },
+                "articleNumber": {
+                  "type": "string"
+                },
+                "srcSizeCD3": {
+                  "type": "string"
+                },
+                "stockCategory": {
+                  "type": "string"
+                },
+                "salesOrganization": {
+                  "type": "string"
+                },
+                "channel": {
+                  "type": "string"
+                },
+                "storageLocation": {
+                  "type": "string"
+                },
+                "unitsReceived": {
+                  "type": "string"
+                },
+                "division": {
+                  "type": "string"
+                },
+                "unitsShipped": {
+                  "type": "string"
+                },
+                "brand": {
+                  "type": "string"
+                },
+                "articleLevelReceiving": {
+                  "type": "string"
+                },
+                "salesSizeDescription": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "orderLine",
+                "articleNumber",
+                "srcSizeCD3",
+                "stockCategory",
+                "salesOrganization",
+                "channel",
+                "storageLocation",
+                "unitsReceived",
+                "division",
+                "unitsShipped",
+                "brand",
+                "articleLevelReceiving",
+                "salesSizeDescription"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "created",
+        "hostIndicator",
+        "plant",
+        "warehouse",
+        "transactionNumber",
+        "sequenceNumber",
+        "returnOrder",
+        "originalOrder",
+        "enterpriseCode",
+        "shipTo",
+        "soldTo",
+        "purchaseOrderType",
+        "reasonCode",
+        "returnNote",
+        "returnOrderLines"
+      ]
+    }
+  },
+  "required": [
+    "ReturnConfirmation"
+  ]
+}
