@@ -10,7 +10,7 @@
         <xs:element name="transactionNumber" type="xs:string"/>
         <xs:element name="internalReference" type="xs:string"/>
         <xs:element name="warehouse" type="xs:string"/>
-        <xs:element name="inboundDeliveryLines">
+        <xs:element name="inboundDeliveryLines"  maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="articleNumber" type="xs:string"/>
