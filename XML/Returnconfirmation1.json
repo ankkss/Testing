@@ -1,137 +1,336 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "properties": {
-    "ReturnConfirmation": {
-      "type": "object",
-      "properties": {
-        "created": {
-          "type": "string"
-        },
-        "hostIndicator": {
-          "type": "string"
-        },
-        "plant": {
-          "type": "string"
-        },
-        "warehouse": {
-          "type": "string"
-        },
-        "transactionNumber": {
-          "type": "string"
-        },
-        "sequenceNumber": {
-          "type": "string"
-        },
-        "returnOrder": {
-          "type": "string"
-        },
-        "originalOrder": {
-          "type": "string"
-        },
-        "enterpriseCode": {
-          "type": "string"
-        },
-        "shipTo": {
-          "type": "string"
-        },
-        "soldTo": {
-          "type": "string"
-        },
-        "purchaseOrderType": {
-          "type": "string"
-        },
-        "reasonCode": {
-          "type": "string"
-        },
-        "returnNote": {
-          "type": "string"
-        },
-        "returnOrderLines": {
-          "type": "array",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "orderLine": {
-                  "type": "string"
-                },
-                "articleNumber": {
-                  "type": "string"
-                },
-                "srcSizeCD3": {
-                  "type": "string"
-                },
-                "stockCategory": {
-                  "type": "string"
-                },
-                "salesOrganization": {
-                  "type": "string"
-                },
-                "channel": {
-                  "type": "string"
-                },
-                "storageLocation": {
-                  "type": "string"
-                },
-                "unitsReceived": {
-                  "type": "string"
-                },
-                "division": {
-                  "type": "string"
-                },
-                "unitsShipped": {
-                  "type": "string"
-                },
-                "brand": {
-                  "type": "string"
-                },
-                "articleLevelReceiving": {
-                  "type": "string"
-                },
-                "salesSizeDescription": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "orderLine",
-                "articleNumber",
-                "srcSizeCD3",
-                "stockCategory",
-                "salesOrganization",
-                "channel",
-                "storageLocation",
-                "unitsReceived",
-                "division",
-                "unitsShipped",
-                "brand",
-                "articleLevelReceiving",
-                "salesSizeDescription"
-              ]
-            }
-          ]
-        }
-      },
-      "required": [
-        "created",
-        "hostIndicator",
-        "plant",
-        "warehouse",
-        "transactionNumber",
-        "sequenceNumber",
-        "returnOrder",
-        "originalOrder",
-        "enterpriseCode",
-        "shipTo",
-        "soldTo",
-        "purchaseOrderType",
-        "reasonCode",
-        "returnNote",
-        "returnOrderLines"
-      ]
-    }
-  },
-  "required": [
-    "ReturnConfirmation"
-  ]
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1650452942.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"ReturnConfirmation"
+	],
+	"properties": {
+		"ReturnConfirmation": {
+			"$id": "#root/ReturnConfirmation", 
+			"title": "Returnconfirmation", 
+			"type": "object",
+			"required": [
+				"created",
+				"hostIndicator",
+				"plant",
+				"warehouse",
+				"transactionNumber",
+				"sequenceNumber",
+				"returnOrder",
+				"originalOrder",
+				"enterpriseCode",
+				"shipTo",
+				"soldTo",
+				"purchaseOrderType",
+				"reasonCode",
+				"returnNote",
+				"returnOrderLines"
+			],
+			"properties": {
+				"created": {
+					"$id": "#root/ReturnConfirmation/created", 
+					"title": "Created", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"2022-01-24T13:18:24-05:00"
+					],
+					"pattern": "^.*$"
+				},
+				"hostIndicator": {
+					"$id": "#root/ReturnConfirmation/hostIndicator", 
+					"title": "Hostindicator", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"DEU"
+					],
+					"pattern": "^.*$"
+				},
+				"plant": {
+					"$id": "#root/ReturnConfirmation/plant", 
+					"title": "Plant", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"6041"
+					],
+					"pattern": "^.*$"
+				},
+				"warehouse": {
+					"$id": "#root/ReturnConfirmation/warehouse", 
+					"title": "Warehouse", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"US1"
+					],
+					"pattern": "^.*$"
+				},
+				"transactionNumber": {
+					"$id": "#root/ReturnConfirmation/transactionNumber", 
+					"title": "Transactionnumber", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"116880879"
+					],
+					"pattern": "^.*$"
+				},
+				"sequenceNumber": {
+					"$id": "#root/ReturnConfirmation/sequenceNumber", 
+					"title": "Sequencenumber", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"1"
+					],
+					"pattern": "^.*$"
+				},
+				"returnOrder": {
+					"$id": "#root/ReturnConfirmation/returnOrder", 
+					"title": "Returnorder", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"6133926085"
+					],
+					"pattern": "^.*$"
+				},
+				"originalOrder": {
+					"$id": "#root/ReturnConfirmation/originalOrder", 
+					"title": "Originalorder", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"A"
+					],
+					"pattern": "^.*$"
+				},
+				"enterpriseCode": {
+					"$id": "#root/ReturnConfirmation/enterpriseCode", 
+					"title": "Enterprisecode", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"60605650016060565001"
+					],
+					"pattern": "^.*$"
+				},
+				"shipTo": {
+					"$id": "#root/ReturnConfirmation/shipTo", 
+					"title": "Shipto", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"6060565001"
+					],
+					"pattern": "^.*$"
+				},
+				"soldTo": {
+					"$id": "#root/ReturnConfirmation/soldTo", 
+					"title": "Soldto", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"6060565000"
+					],
+					"pattern": "^.*$"
+				},
+				"purchaseOrderType": {
+					"$id": "#root/ReturnConfirmation/purchaseOrderType", 
+					"title": "Purchaseordertype", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"U90"
+					],
+					"pattern": "^.*$"
+				},
+				"reasonCode": {
+					"$id": "#root/ReturnConfirmation/reasonCode", 
+					"title": "Reasoncode", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"R01"
+					],
+					"pattern": "^.*$"
+				},
+				"returnNote": {
+					"$id": "#root/ReturnConfirmation/returnNote", 
+					"title": "Returnnote", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"448868967"
+					],
+					"pattern": "^.*$"
+				},
+				"returnOrderLines": {
+					"$id": "#root/ReturnConfirmation/returnOrderLines", 
+					"title": "Returnorderlines", 
+					"type": "array",
+					"default": [],
+					"items":{
+						"$id": "#root/ReturnConfirmation/returnOrderLines/items", 
+						"title": "Items", 
+						"type": "object",
+						"required": [
+							"orderLine",
+							"articleNumber",
+							"srcSizeCD3",
+							"stockCategory",
+							"salesOrganization",
+							"channel",
+							"storageLocation",
+							"unitsReceived",
+							"division",
+							"unitsShipped",
+							"brand",
+							"articleLevelReceiving",
+							"salesSizeDescription"
+						],
+						"properties": {
+							"orderLine": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/orderLine", 
+								"title": "Orderline", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"000012"
+								],
+								"pattern": "^.*$"
+							},
+							"articleNumber": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/articleNumber", 
+								"title": "Articlenumber", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"GM0317"
+								],
+								"pattern": "^.*$"
+							},
+							"srcSizeCD3": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/srcSizeCD3", 
+								"title": "Srcsizecd3", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"210"
+								],
+								"pattern": "^.*$"
+							},
+							"stockCategory": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/stockCategory", 
+								"title": "Stockcategory", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"A60380001"
+								],
+								"pattern": "^.*$"
+							},
+							"salesOrganization": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/salesOrganization", 
+								"title": "Salesorganization", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"6038"
+								],
+								"pattern": "^.*$"
+							},
+							"channel": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/channel", 
+								"title": "Channel", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"01"
+								],
+								"pattern": "^.*$"
+							},
+							"storageLocation": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/storageLocation", 
+								"title": "Storagelocation", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"0001"
+								],
+								"pattern": "^.*$"
+							},
+							"unitsReceived": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/unitsReceived", 
+								"title": "Unitsreceived", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"50"
+								],
+								"pattern": "^.*$"
+							},
+							"division": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/division", 
+								"title": "Division", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"02"
+								],
+								"pattern": "^.*$"
+							},
+							"unitsShipped": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/unitsShipped", 
+								"title": "Unitsshipped", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"0"
+								],
+								"pattern": "^.*$"
+							},
+							"brand": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/brand", 
+								"title": "Brand", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"11"
+								],
+								"pattern": "^.*$"
+							},
+							"articleLevelReceiving": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/articleLevelReceiving", 
+								"title": "Articlelevelreceiving", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"898"
+								],
+								"pattern": "^.*$"
+							},
+							"salesSizeDescription": {
+								"$id": "#root/ReturnConfirmation/returnOrderLines/items/salesSizeDescription", 
+								"title": "Salessizedescription", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"30"
+								],
+								"pattern": "^.*$"
+							}
+						}
+					}
+
+				}
+			}
+		}
+
+	}
 }
